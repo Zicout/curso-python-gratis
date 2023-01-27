@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Curso de Algoritmo - Aprenda Algoritmo com Python</title>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta
+      name="description"
+      content="Aprenda a programar de forma extremamente simples e rápida usando Python como porta de entrada. Aqui não tem enrolação e é tudo de graça!"
+    />
+    <meta
+      name="keywords"
+      content="python, instalar python, curso programar gratis, curso python gratis"
+    />
+  
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+    />
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-9">
+          <header class="row bb1 pb15">
+            <br />
+            <div class="col-xs-2">
+              <div class="row">
+                <a
+                  href="https://comandosgit.github.io/"
+                  title="Curso Algoritmo - Aprenda Algoritmo com Python"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-10">
+              <div class="row">
+                <div class="col-xs-12">
+                  <h1 class="mtb0"><b>Curso Algoritmo</b></h1>
+                </div>
+                <div class="col-xs-12">
+                  <h3 class="mtb0">Algoritmo com Python totalmente gratuito</h3>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <br />
+
+          <div class="row">
+            <section class="col-xs-12">
+              <article class="row" id="instalando-e-configurando">
+                <h2 class="col-xs-12">
+                  Instalando e Configurando as Ferramentas
+                </h2>
+
+                <div class="col-xs-12">
+                  <h4 id="instalacao">Instalação do Python</h4>
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="active">
+                      <a href="#windows" role="tab" data-toggle="tab"
+                        ><h3>Windows</h3></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#mac" role="tab" data-toggle="tab"
+                        ><h3>Mac</h3></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#linux" role="tab" data-toggle="tab"
+                        ><h3>Linux</h3></a
+                      >
+                    </li>
+                  </ul>
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <br />
+
+                    <div class="tab-pane fade in active" id="windows">
+                      <p>
+                        São necessários poucos passos para a instalção do Python
+                        no Windows
+                      </p>
+                      <ol>
+                        <li>
+                          Vá para o site oficial do Python
+                          <a href="https://www.python.org/"
+                            >(https://www.python.org/)</a
+                          >
+                          e clique no link para download da versão mais recente
+                          do Python para o Windows.
+                        </li>
+                        <img
+                          src="img/windows-passo-1.png"
+                          style="margin-top: 20px; margin-bottom: 20px"
+                          class="img-thumbnail"
+                          alt=""
+                        />
+                        <li>
+                          Execute o arquivo baixado para iniciar o assistente de
+                          instalação.
+                        </li>
+                        <li>
+                          Siga as instruções na tela para completar a
+                          instalação.
+                          <strong
+                            >Certifique-se de selecionar a opção para adicionar
+                            Python às variáveis de ambiente do Windows</strong
+                          >, caso contrário, você precisará especificar o
+                          caminho completo para o interpretador Python cada vez
+                          que quiser usá-lo.
+                        </li>
+                        <img
+                          src="img/windows-passo-3.png.png"
+                          style="margin-top: 20px; margin-bottom: 20px"
+                          class="img-thumbnail"
+                          alt=""
+                        />
+                        <li>
+                          Depois de instalar, abra o prompt de comando do
+                          Windows e digite:
+                          <div class="well well-sm">
+                            <p style="margin-top: 8px;"
+                              href=""
+                              title="Verificando Versão Python"
+                              >python --version</p
+                            >
+                          </div>
+                          Esse comando deve retornar algo como "Python 3.x.x"
+                        </li>
+                      </ol>
+
+                      <p>
+                        Após concluir a instalação do Python, você precisará de
+                        uma IDE ou Editor de Texto para começar a programar. No
+                        curso usaremos o Pycharm, mas existem vários outros
+                        softwares capazes dessa função.
+                      </p>
+                    </div>
+
+                    <div class="tab-pane fade" id="mac">
+                      <p>
+                        Instalaremos o Python no Mac através do terminal.
+                        Procure o Terminal no Launchpad e inicialize-o
+                      </p>
+
+                      <ul>
+                        <li>
+                          Digite o comando abaixo e aperte Y para confirmar os
+                          downloads necessários
+                        </li>
+                        <div class="well well-sm" style="margin-top: 8px">
+                          python3
+                        </div>
+                        <li>
+                          Após isso, para chamar o Python basta digitar
+                          <strong>python3 no console</strong>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tab-pane fade" id="linux">
+                      <p>
+                        Normalmente o Linux já possui uma versão do Python 3
+                        inclusa. Você pode verificar a versão instalada em sua
+                        distro abrindo o terminal e digitando:
+                      </p>
+                      <div class="well well-sm">python3 --version</div>
+
+                      <p>
+                        Você deve ver a versão do python sendo 3.10 ou superior.
+                        Se ela estiver desatualizada, basta fazer o download com
+                        o comando:
+                      </p>
+                      <div class="well well-sm">
+                        sudo apt-get install python3.11
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <h4 id="instalacaoPyCharm">Instalando o PyCharm</h4>
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div class="tab-pane fade in active" id="PyCharm1">
+                      <br />
+
+                      <p>
+                        A primeira coisa que você deve fazer após instalar o PyCharm é certificar de construir um ambiente de desenvolvimento. O primeiro passo para isso é obter um IDE ou um Editor de Texto. Entre IDEs e Editores nós recomendamos que você use o PyCharm simplesmente por ser uma IDE focada para o desenvolvimento com essa linguagem. Posteriormente iremos ultilizar outras IDEs, mas no momento, tente focar em ultilizar essa ferramenta maravilhosa que é o <strong style="color: orange;">PyCharm</strong>
+                      </p>
+
+                      <p>O tutorial é bem simples e não é necessário um tutorial para cada SO. Usuários de Windows e Mac já devem estar familiarizados com a Instalação. É apenas Next e Next até finalizar e pronto! No caso do Linux, vou indicar vocês procurarem um vídeo a respeito, uma vez que ele se torna um pouquinho mais complicado.</p>
+                      <p style="color: green;" class="text-muted">Clique no botão abaixo para fazer o download do PyCharm</p>
+                      <a href="https://www.jetbrains.com/pt-br/pycharm/download/#section=windows" class="btn btn-primary">Download PyCharm</a>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+                <div class="col-xs-12" style="margin-top: 8px;">
+                  <h4 id="helloWorld">Primeiro Hello World</h4>
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="active">
+                      <a href="#helloWorld" role="tab" data-toggle="tab"
+                        ><h3>Livre-se do Karma Ruim</h3></a
+                      >
+                    </li>
+                  </ul>
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div class="tab-pane fade in active" id="githelp1">
+                      <br />
+
+                      <p>
+                        Quando se aprende uma nova linguagem de programação, existem várias pessoas que indicam fazer o primeiro Hello World como forma de se livrar de uma "maldição". Calma, não estamos falando sério não! Mas, nunca se sabe né? Vamos evitar que sejamos os primeiros a descobrir se isso é verdade. Abra o PyCharm, clique em New Project, Selecione uma pasta para o seu projeto e mãos a obra! 
+
+                        <strong>Clique em New no canto superior > Python File [escolha o nome que você preferir]</strong>
+                      </p>
+                      <p>Feito isso, digite:</p>
+
+                      <div class="well well-sm">
+                        print("Hello World")
+                      </div>
+                      <p>Clique com o botão direito do mouse sobre o que escreveu e selecione <strong style="color: green;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+                        <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+                      </svg> Run</strong></p>
+                      <p>Parabéns!!!! Você fez o seu primeiro programa em Python! Agora uma nova trajetória se inicia em sua vida e daqui pra frente não vale mais desistir! Você é um vencedor desde que chegou a esse site e por isso eu não quero te deixar desistir!</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <br />
+              <article class="row" id="criando-o-projeto">
+                <h2 class="col-xs-12">Pondo a mão na massa</h2>
+
+                <div class="col-xs-12">
+                  <h4 id="variaveis">Variáveis</h4>
+                  <p>Em Python, uma variável é um nome que é associado a um valor. Você pode usar variáveis ​​para armazenar dados que você deseja usar em seu programa. Para atribuir um valor a uma variável, você usa o sinal de igualdade (=).</p>
+                  <p>É importante notar que, em python, variáveis não precisam ser declaradas antes de serem usadas e também não precisam ser inicializadas com valores específicos, se você atribui um valor a uma variável que não foi criada, ela será criada automaticamente.</p>
+                  <p>Além disso, é importante notar que as variáveis devem ser nomear de forma significativa e coerente, e não podem começar com números ou conter caracteres especiais, exceto o sublinhado.</p>
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="active">
+                      <a role="tab" data-toggle="tab"
+                        ><h3>Tipos Primitivos</h3></a
+                      >
+                    </li>
+                  </ul>
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div class="tab-pane fade in active" id="variaveis1">
+                      <br />
+
+                      <p><strong>Considere 4 tipos primitivos:</strong></p>
+
+                      <p>
+                        <strong>int (números inteiros):</strong> são números inteiros sem casas decimais, como 1, 2, 3, 4, etc. Um exemplo de uso seria:
+
+                        <div class="well well-sm">
+                            x = 5 <br>
+                            y = -3 <br>
+                            z = x + y <br>
+                        </div>
+
+                      </p>
+
+                      <p>
+                        <strong>float (números de ponto flutuante):</strong> são números com casas decimais, como 1.5, 2.7, 3.14, etc. Um exemplo de uso seria:
+
+                        <div class="well well-sm">
+                            x = 5.23 <br>
+                            y = -3.14 <br>
+                        </div>
+
+                      </p>
+                      <p>
+                        <strong>str (strings):</strong> são sequências de caracteres, como "hello", "goodbye", "python", etc. Um exemplo de uso seria:
+
+                        <div class="well well-sm">
+                            nome = "leandro"<br>
+                            frase = "Eu estou aprendendo python" <br>
+                        </div>
+                      </p>
+
+                      <p>
+                        <strong>bool (valores booleanos):</strong> são valores verdadeiro ou falso. Um exemplo de uso seria:
+
+                        <div class="well well-sm">
+                            esta_chovendo = True<br>
+                            esta_sol = False <br>
+                        </div>
+                      </p>
+
+                      <br />
+                      <h5>
+                        Operações com variáveis
+                      </h5>
+
+                      <p>
+                        É possível aplicar operações aritméticas com váriaveis números (isto é, variáveis do tipo <strong>int</strong> e <strong>float</strong>).
+                      </p>
+                      <p>Veja quais são as operações permitidas:
+                      </p>
+                      <div class="well well-sm">
+                        <strong>adição</strong> = +<br>
+                        <strong>subtração</strong> = - <br>
+                        <strong>multiplicação</strong> = * <br>
+                        <strong>divisão</strong> = / <br>
+                        <strong>divisao inteira</strong> = // <br>
+                        <strong>exponenciação</strong> = ** <br>
+                      </div>
+                      <h5>Operações com variáveis do tipo string</h5>
+                      <p>É permitido também operações com textos e na verdade chamamos essas operações de "concatenações". Se você somar duas strings (textos) você obtem um texto só. Exemplo:</p>
+
+                      <div class="well well-sm">
+                        <strong>nome</strong> = "leandro"<br>
+                        <strong>sobrenome</strong> = "duarte" <br>
+                        <strong>nome_completo</strong> = nome + " " + sobrenome <br>
+                        <strong>print(nome_completo)</strong> <br>
+                        <strong style="margin-top: 8px; color: green; font-size: 13px;">OUTPUT:</strong> >>> leandro duarte
+
+                      </div>
+                    
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <h4 id="saida">Saída e Entrada de Dados</h4>
+                  <p>Para exibir dados em Python, o método mais comum é usar a função print(). Você fez isso com o Hello, World! Lembra?</p>
+                  <p>É possível imprimir variáveis de qualquer um dos tipos que explicamos acima, como também adicionar qualquer Texto, <strong>desde que estes estejam entre aspas duplas ou simples.</strong></p>
+                  <p>Não somente exibir, como também coletar dados é possível. E na verdade é aqui que começamos a entender mais sobre como o sistema funciona.</p>
+                  <p>Se <strong>print()</strong> exibe dados, precisamos de algo que consiga coletar os dados vindo do teclado do usuário, correto? Sim, e para isso utilizamos a função <strong>input()</strong></p>
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="active">
+                      <a href="#saida1" role="tab" data-toggle="tab"
+                        ><h3>Exemplo:</h3></a
+                      >
+                      <div class="well well-sm">
+                        nome = input("Qual o seu nome: ") <br>
+                        print(nome) <br>
+                        <strong style="margin-top: 8px; color: green; font-size: 13px;">OUTPUT:</strong> <br>
+                        >>> Qual o seu nome: <strong style="color: rgb(2, 145, 0);">leandro duarte</strong> <br>
+                        >>> leandro duarte
+                      </div>
+
+                    </li>
+                    
+                  </ul>
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div class="tab-pane fade in active" id="saida1">
+                      <br />
+
+                      <p>
+                        O problema de usar o input() sozinho é que todo texto digitado será retornado como uma string. Isto é: se você digitar um número, o computador não faz a conversão automatica do tipo. É preciso informar ao computador qual o tipo de dado você está exigindo do usuário. Se você lembra dos tipos primitivos, tente agora usá-los. Exemplo:
+                      </p>
+
+                      <div class="well well-sm">
+                        nome = str(input("Me diga o seu nome: ")) <br>
+                        idade = int(input("Me diga sua idade:"))
+                      </div>
+
+                      <p>Comece a usar esse tipo de tipagem ao trazer dados, já que em outras linguagens você sempre precisará declarar o tipo de dado antes de solicitá-lo ao usuário. Em java por exemplo, existem funções exclusivas para inteiro, string ou float. É recomendável que vocêmantenha esse hábito para que em outras linguagens não tenha dificuldade</p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <br />
+              <article class="row">
+                <h2 class="col-xs-12">Strings</h2>
+
+                <div class="col-xs-12">
+                  <h4 id="strings">Sintese</h4>
+                  <p>As strings podem ser criadas utilizando aspas simples ou duplas. Exemplo: "Olá, mundo!" ou 'Olá, mundo!'</p>
+                  <p>Como foi supracitado, é possível concatená-las, isto é, somar uma string a outra e assim <strong>uni-las.</strong></p>
+                  <p>Em todas as linguagens de programação, é considerado string um conjunto de caracteres que somados formam a palavras, frases e textos. Todos os caracteres podem ser strings, de números a letras e simbolos até espaços vazios.</p>
+                  <p>É comum que em todas as linguagens tenhamos que lidar com esses textos e em python nós podemos trabalhar com elas diretamente através de métodos incluídos na classe str(). Mais pra frente iremos explicar o conceito de classes e métodos mas por agora pense nos métodos como um "meio de manipular um objeto (as string que iremos trabalhar)".</p>
+                  <p>Você agora vai ver os principais métodos que podem ser aplicados em uma string.</p>
+                  
+                </div>
+                <div class="col-xs-12">
+                  <h4 id="metodoLen">len()</h4>
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="active">
+                      <a href="#metodoLen1" role="tab" data-toggle="tab"
+                        ><h3>Contando Caractéres</h3></a
+                      >
+                    </li>
+                  </ul>
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div class="tab-pane fade in active" id="metodoLen1">
+                      <br />
+
+                      <p>
+                        Principal método para conseguirmos obter a quantidade de caractéres em uma string. Esse método retorna um número do tipo inteiro. Veja o exemplo:
+                      </p>
+
+                      <div class="well well-sm">
+                        variavel = "oi" <br>
+                        caracteres = len(variavel) <br>
+                        print(caracteres) <br>
+                        <strong style="margin-top: 8px; color: green; font-size: 13px;">OUTPUT:</strong> <br>
+                        >>> 2
+
+                      </div>
+                      <p>Vale ressaltar que não lugar da variável você pode colocar uma string entre aspas e ela retornará a quantidade de caractéres normalmente. Outro ponto importante a verificar é que espaços vazios também são considerados caractéres.</p>
+                    
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xs-12">
+                  <h4 id="lower">lower()</h4>
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="active">
+                      <a href="#lower1" role="tab" data-toggle="tab"
+                        ><h3>Strings minúsculas</h3></a
+                      >
+                    </li>
+                  </ul>
+                  
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div class="tab-pane fade in active" id="lower1">
+                      <br />
+
+                      <p>
+                        As vezes nós queremos deixar um texto todo em minúsculo. Pense naqueles usuários que acabam digitando com CAPS LOCK ativado. Eu particulamente acho muito mais difícil ler um texto todo maiúsculo e também muito mais complexo de se lidar com ele. Vamos utilizar um método chamado "lower()" e seremos capazes de pegar caracteres, palavras, frases e texto e coloca-las todas em minúscula! Exemplo:
+                      </p>
+
+                      <div class="well well-sm">
+                        variavel = "EU DIGITO COM CAPS LOCK LIGADO" <br>
+                        minuscula = variavel.lower() <br>
+                        print(minuscula) <br>
+                        <strong style="margin-top: 8px; color: green; font-size: 13px;">OUTPUT:</strong> <br>
+                        >>> eu digito com caps lock ligado</div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <h4 id="upper">upper()</h4>
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="active">
+                      <a href="#upper1" role="tab" data-toggle="tab"
+                        ><h3>Quero tudo maiúsculo</h3></a
+                      >
+                    </li>
+                  </ul>
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div class="tab-pane fade in active" id="gitcommit1">
+                      <br />
+
+                      <p>
+                        As vezes, ao contrário de queremos um dado inserido pelo usuário tudo minúsculo, nós queremos ele todo maiúsculo. Imagine você com um cliente tendo uma loja profissional e o seu cliente está tendo problemas com cupons. Os usuários estão digitando os cupons em minúsculo, mas o sistema só aceita se estiver em maiúsculo. E você vai agora ao seu cliente e diz: EU TENHO A SOLUÇÃO! Eu fiz o curso do Leandro e ele me mostrou que eu posso transformar os dados em maiúsculos! Veja o exemplo:
+                      </p>
+
+                      <div class="well well-sm">
+                        cupom = "3cmn0p" <br>
+                        maiusculo = variavel.upper() <br>
+                        print(maiusculo) <br>
+                        <strong style="margin-top: 8px; color: green; font-size: 13px;">OUTPUT:</strong> <br>
+                        >>> 3CMN0P
+                      </div>
+                      <p>
+                        Viu como é simples? E acreditem, esses métodos podem parecer bobos mas eles vão acompanhar toda a sua carreira daqui pra frente! Se prepare programador!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <h4 id="strip">strip()</h4>
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="active">
+                      <a href="#strip1" role="tab" data-toggle="tab"
+                        ><h3>Removendo Espaços</h3></a
+                      >
+                    </li>
+                  </ul>
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div class="tab-pane fade in active" id="strip1">
+                      <br />
+
+                      <p>
+                        Todo mundo conhece aquele usuário que antes de começar a digitar, testa o teclado no formulário apertando varias vezes o espaço. Ou mesmo aquele usuário que sempre deixa um espaço após digitar o email em algum formulário por aí. É importantíssimo tratar esses casos, já que muitas vezes podemos ter exceções (erros) devido a essa má pratica por parte do usuário. Você já deve ter percebido que nós sempre estamos consertando os erros de digitação do usuário né? Faça disso sua rotina, uma vez que o usuário sempre será o maior inimigo dos apps, hahahaha! 
+                      </p>
+                      <p>Mas voltando.. Entenda que é possível tratarmos esses dados digitados pelos usuários removendo espaços antes e após o termino da palavra, frase ou texto. O método mais eficaz para isso é o <strong>strip()</strong>. Bora ver um exemplo na prática?</p>
+
+                      <div class="well well-sm">
+                        variavel = "&nbsp&nbsp&nbsp&nbspleandro@email.com&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp" <br>
+                        semEspaco = variavel.strip() <br>
+                        print(semEspaco) <br>
+                        <strong style="margin-top: 8px; color: green; font-size: 13px;">OUTPUT:</strong> <br>
+                        >>> leandro@email.com
+                      </div>
+                      <p>
+                        Repare que antes tinhamos entre os parenteses espaços antes e depois do email. A saída foi a string sem esses espaços e agora ela está completamente tratada. É importante se atentar que esse método não retira os espaços no meio de frases e textos. Para essa função temos outro método que explicarei logo adiante.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <h4 id="replace">replace()</h4>
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="active">
+                      <a href="#replace1" role="tab" data-toggle="tab"
+                        ><h3>Substituindo Caractéres</h3></a
+                      >
+                    </li>
+                  </ul>
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div class="tab-pane fade in active" id="replace1">
+                      <br />
+
+                      <p>
+                        Existem dois métodos de substitui caractéres dentro de uma string. O mais prático é o que será ensinado agora. O outro método ensinaremos mais a frente quando tratarmos de listas. Lá você também vai abrir a sua mente para o que realmente significa uma string. 
+                      </p>
+                      <p>O método <strong>replace()</strong> é extremamente prático e simples. Exemplo:</p>
+
+                      <div class="well well-sm">
+                        nome = "leandro duarte" <br>
+                        nomeNovo = nome.replace("duarte", "novaes") <br>
+                        print(nomeNovo) <br>
+                        <strong style="margin-top: 8px; color: green; font-size: 13px;">OUTPUT:</strong> <br>
+                        >>> leandro novaes
+                      </div>
+
+                      <p>Perceba que na linha 2 estamos dizendo ao Python: <strong>Ei python, procura a palavra "duarte" e troca pra mim pela palavra "novaes"</strong>. Você percebeu que na verdade nós estamos dizendo ao python o que fazer. Todos esses métodos explicados anteriormente fazem parte de instruções que dizemos ao python, e o python se encarrega de dizer isso ao nosso computador. Mais pra frente entraremos mais a fundo (lá ele) em como esse processo de "python diz ao computador" funciona. Mas não se preocupe por agora, na verdade não é tão difícil!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <h4 id="split">split()</h4>
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="active">
+                      <a href="#split1" role="tab" data-toggle="tab"
+                        ><h3>Separando as coisas...</h3></a
+                      >
+                    </li>
+                  </ul>
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div class="tab-pane fade in active" id="split1">
+                      <br />
+
+                      <p>
+                       As vezes nos queremos separar um texto em várias partes. Como por exemplo, pedimos ao usuário vários emails e que ele digite cada email separado por uma vírgula.
+                      </p>
+
+                      <div class="well well-sm">
+                        email = ""email1","email2","email3","email4","email7","email6"" <br>
+                        emailSeparado = nome.split(",") <br>
+                        print(emailSeparado) <br>
+                        <strong style="margin-top: 8px; color: green; font-size: 13px;">OUTPUT:</strong> <br>
+                        >>> ["email1", "email2", "email3", "email4", "email5", "email6"]
+                      </div>
+                      <p>Você deve estar pensando: <strong>Poxa, mas não separou não, continua a vírgula ali.</strong> Mas eu digo: Calma programador, nós ainda não entendemos esse output (saída) mas iremos tratar sobre em um tópico mais a frente. Mas de antemão vou lhe dizer que isso se trata de uma lista. Basicamente cada email dentro dela é um item só. Essa lista funciona como se fosse uma grande variável onde podemos armazenar item a item dentro dela e acessá-los através de suas posições. Se você ainda não entendeu, fique tranquilo que em um tópico mais a frente eu voltarei a abordar esse método novamente.</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <br />
+              <article class="row" id="condicao">
+                <h2 class="col-xs-12">Condições</h2>
+
+                <div class="col-xs-12">
+                  <h4 id="ifelse">"if" e "else"</h4>
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="active">
+                      <a href="#ifelse1" role="tab" data-toggle="tab"
+                        ><h3>Criando Possibilidades</h3></a
+                      >
+                    </li>
+                  </ul>
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div class="tab-pane fade in active" id="ifelse1">
+                      <br />
+
+                      <p>
+                        Até agora você viu aplicações simples onde nós captamos dados do usuário, tratamos ele e então devolvemos uma saída mostrando esse "dado transformado". Mas e se nós queremos engrandecer o nosso aplicativo através de possibilidades? Imagine que no seu sistema você precise verificar se o usuário é maior de idade ou não. E você imprimirá uma mensagem a ele caso ele seja menor de idade. Existe essa possibilidade e é com <strong>if</strong> e <strong>else</strong> que tratamos isso. Veja o exemplo:
+                      </p>
+
+                      <div class="well well-sm">
+                        idade = int(input("Digite a sua idade: ")) <br> <br>
+                        
+                        if idade &lt; 18: <br>
+                        &nbsp&nbsp&nbsp&nbspprint("Você é menor de idade e não pode acessar o conteúdo do do nosso aplicativo") <br><br>
+
+                        else: #caso o usuário seja maior de idade <br>
+                        &nbsp&nbsp&nbsp&nbspprint("Seja bem vindo ao nosso sistema!") <br>
+                        
+                      </div>
+                      <p>Perceba que inserimos informações novas. Você deve se lembrar das aulas de matemática <s>chatas</s> onde utilizávamoso sinal &lt; para representar <strong>(menor que)</strong> e o sinal &gt; para representar <strong>(maior que)</strong>
+                      Aqui no python nós utilizamos esses sinais da mesma maneira. 
+                      </p>
+                      <p>Outra coisa importante a se verificar é que após o sinal <strong>:</strong> nós deixamos a linha identada. Isto é, nós indicamos ao python que aquela linha pertence a instrução anterior, no caso o <i>if idade &lt; 18:</i></p>
+                      <p>Mas olhando para o código acima percebemos que criamos duas saídas diferente. Vamos analizar então essas duas saídas? </p>
+
+                      <strong><p>Saída nº 1</p></strong>
+                      <div class="well well-sm">
+                        <strong style="margin-top: 8px; color: green; font-size: 13px;">OUTPUT 1:</strong> <br>
+                        >>> Digite a sua idade: <strong style="color: rgb(4, 109, 102);">20</strong> <br>
+                        >>> Seja bem vindo ao nosso sistema!
+                      </div>
+
+                      <strong><p>Saída nº 2</p></strong>
+                      <div class="well well-sm">
+                        <strong style="margin-top: 8px; color: green; font-size: 13px;">OUTPUT 2:</strong> <br>
+                        >>> Digite a sua idade: <strong style="color: rgb(4, 109, 102);">15</strong> <br>
+                        >>> Você é menor de idade e não pode acessar o conteúdo do do nosso aplicativo
+                      </div>
+                      <p>
+                        Você pode usar quantos <strong>if</strong> você quiser, entretanto lembre-se que o <strong>else</strong> deve ser utilizado apenas uma vez a cada if. Para casos onde você precisa testar mais de dois caminhos, o correto será ensinado no próximo tópico.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <h4 id="elif">elif</h4>
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="active">
+                      <a href="#elif1" role="tab" data-toggle="tab"
+                        ><h3>Se não a anterior, tente essa</h3></a
+                      >
+                    </li>
+                  </ul>
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div class="tab-pane fade in active" id="elif1">
+                      <br />
+                      <p>
+                        Um pouco diferente <strong>if</strong>. O <strong>elif</strong> só pode ser utilizado se antes ouver um <strong>if</strong>. Ele serve como um segundo <strong>if</strong>. Você pode colocar quantos <strong>elif</strong> você quiser. Veja o exemplo:
+                      </p>
+                      <div class="well well-sm">
+                        numero = 10 <br>
+                        <br>
+                        if numero &lt; 10: <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;print("É menor que 10") <br> <br>
+                        elif numero == 10: <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;print("É igual a 10") <br> <br>
+                        else: <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;print("É maior que 10") <br> <br>
+                        <strong style="margin-top: 8px; color: green; font-size: 13px;">OUTPUT:</strong> 
+                        >>> É igual a 10
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- até aqui-->
+              </article>
+              <br />
+            </section>
+          </div>
+        </div>
+
+        <!--NAVBAR-->
+        <div class="col-xs-3">
+          <nav class="navbar affix" role="navigation">
+            <br />
+
+            <div class="col-xs-12">
+              <!-- FACEBOOK -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+              </svg>
+              <!--YOUTUBE-->
+              <a href="https://www.youtube.com/@devlean"><svg style="margin-left: 10px;" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+              </svg></a>
+              
+              <!--tiktok-->
+              <a href="https://www.tiktok.com/@devlean?_t=8ZNtllpgyms&_r=1"><svg style="margin-left: 10px;" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
+              </svg></a>
+            </div>
+            <br />
+            <br />
+
+            <div class="container-fluid">
+              <ul class="nav nav-pills nav-stacked">
+                <li>
+                  <a
+                    href="#instalando-e-configurando"
+                    class="install"
+                    title="Instalando e configurando"
+                    ><b>Instalando e Configurando</b></a
+                  >
+                  <ul class="nav">
+                    <li>
+                      <a href="#instalacao" title="instalação">Python</a>
+                    </li>
+                    <li>
+                      <a href="#instalacaoPyCharm" title="PyCharm">PyCharm</a>
+                    </li>
+                    <li><a href="#helloWorld" title="hello world">Hello World</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    class="variaveis"
+                    title="Variaveis e Dados"
+                    href="#variaveis"
+                    ><b>Variáveis e Dados</b></a
+                  >
+                  <ul class="nav">
+                    <li><a href="#variaveis" title="variaveis">Variáveis</a></li>
+                    <li><a href="#saida" title="saida">Saída de Dados</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="basic" href="#strings" title="Strings"
+                    ><b>Strings</b></a
+                  >
+                  <ul class="nav">
+                    <li><a href="#strings" title="sintese">Sintese</a></li>
+                    <li>
+                      <a href="#metodoLen" title="len()">len()</a>
+                    </li>
+                    <li><a href="#lower" title="lower">lower()</a></li>
+                    <li>
+                      <a href="#upper" title="upper">upper()</a>
+                    </li>
+                    <li><a href="#strip" title="strip">strip()</a></li>
+                    <li><a href="#replace" title="git rm">replace()</a></li>
+                    <li><a href="#split" title="git mv">split()</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="condicao" href="#condicao" title="Branch e Merge"
+                    ><b>Condições</b></a
+                  >
+                  <ul class="nav">
+                    <li>
+                      <a href="#ifelse" title="if else">"if" e "else"</a>
+                    </li>
+                    <li>
+                      <a href="#elif" title="elif"
+                        >elif</a>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <br />
+      <footer class="row bt1">
+        <br />
+
+        <div class="col-xs-4 code">
+          <div class="row">
+            <div class="col-xs-12">
+              Este site é inspirado no repositório do
+              <a
+                href="https://github.com/comandosgit/comandosgit.github.io"
+                title="Comandos Git Open Source"
+                >GitHub</a
+              >.
+            </div>
+            <div class="col-xs-12">
+              Por ser uma inspiração, todo o crédito deve ser da equipe. 
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script
+      type="text/javascript"
+      src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4ea006db0c8d27d6"
+    ></script>
+    <script>
+      $("body").scrollspy({
+        target: ".navbar",
+      });
+      $('[data-spy="scroll"]').each(function () {
+        var $spy = $(this).scrollspy("refresh");
+      });
+    </script>
+  </body>
+</html>
